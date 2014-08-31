@@ -1,5 +1,8 @@
 package com.dandeeee.salt.basics;
 
+/**
+ * @author dandedkov.com
+ * */
 public class ExceptionDemo {
 	public static class FooException extends Exception {
 		public FooException(String message, Throwable cause) {
