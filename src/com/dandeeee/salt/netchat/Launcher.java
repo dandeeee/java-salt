@@ -2,7 +2,6 @@ package com.dandeeee.salt.netchat;
 
 public class Launcher {
 
-
     public static void main(String[] args) {
 
         Thread srv = new Thread(new Runnable() {
@@ -17,7 +16,6 @@ public class Launcher {
         });
         srv.start();
 
-
         Thread client1 = new Thread(new Runnable() {
             public void run() {
                 new ChatClientFrame();
@@ -25,15 +23,12 @@ public class Launcher {
         });
         client1.start();
 
-
-
         Thread client2 = new Thread(new Runnable() {
             public void run() {
                 new ChatClientFrame();
             }
         });
         client2.start();
-
     }
 
 }
