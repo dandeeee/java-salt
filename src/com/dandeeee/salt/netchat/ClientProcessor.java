@@ -10,16 +10,14 @@ import java.util.Iterator;
 public class ClientProcessor{
     static int id = 1;
 
-    ChatServer server;
-
-    Socket socket;
-
-    ObjectInputStream socketReader;
-    ObjectOutputStream socketWriter;
-
     User user;
 
+    ChatServer server;
+    Socket socket;
+
     Thread messager;
+    ObjectInputStream socketReader;
+    ObjectOutputStream socketWriter;
 
     public ClientProcessor(ChatServer server_){
         server = server_;
